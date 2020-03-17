@@ -1,0 +1,59 @@
+.content {
+	/*Code to center pie chart in the middle of the page*/
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	/*imported font family from Google font*/
+	font-family: 'Bungee Inline', cursive;
+	text-align: center;
+}
+
+#pie {
+  display: inline-block;
+  padding: 0;
+  width: 506px;
+  height: 506px;
+  border: 1px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.quarter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 250px;
+  height: 250px;
+  color: white;
+  font-size: 18px;
+  text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000;
+}
+
+#q1 {
+  background-color: red;
+  /*Add border to the sides of each pie slice*/
+  border-bottom: 3px solid white;
+  border-right: 3px solid white;
+}
+
+#q2 {
+  background-color: yellow;
+  border-bottom: 3px solid white;
+  border-left: 3px solid white;
+}
+
+#q3 {
+  background-color: blue;
+  border-top: 3px solid white;
+  border-right: 3px solid white;
+}
+
+#q4 {
+  background-color: green;
+  border-top: 3px solid white;
+  border-left: 3px solid white;
+}
